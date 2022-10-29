@@ -1,7 +1,7 @@
 import React from 'react';
 import {useLoaderData} from "react-router-dom";
 import toast from "react-hot-toast"
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip,} from 'reacharts';
 
 
 

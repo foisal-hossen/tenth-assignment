@@ -1,7 +1,7 @@
 import React from 'react';
 import { useContext } from 'react';
 import {FaGoogle,FaGithub} from "react-icons/fa";
-import { AuthContext } from '../../context/UserContext';
+import { AuthContext } from '../Context/UserContext';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import toast from 'react-hot-toast';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useContext } from 'react';
-import  { AuthContext } from '../../context/UserContext';
+import  { AuthContext } from '../Context/UserContext';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Register = () => {

@@ -1,15 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
-import Blog from "../../Components/Blog/Blog";
-import CheckOut from "../../Components/CheckOut/CheckOut";
-import Courses from "../../Components/Courses/Courses";
-import Faq from "../../Components/Faq/Faq";
-import FullCourseDetails from "../../Components/FullCourseDetails/FullCourseDetails";
-import Home from "../../Components/Home/Home";
-import Login from "../../Components/Login/Login";
-import NotFound from "../../Components/NotFound/NotFound";
-import Register from "../../Components/Register/Register";
-import Main from "../../layouts/Main";
-import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
+import Blog from "../Components/Blog";
+import CheckOut from "../Components/CheckOut";
+import Courses from "../Components/Courses";
+import Faq from "../Components/Faq";
+import FullCourseDetails from "../Components/FullCourseDetails";
+import Home from "../Components/Home";
+import Login from "../Components/Login";
+import Error from "../Components/ErrorHandle";
+import Register from "../Components/Register";
+import Main from "../Layouts/Main";
+import PrivateRoutes from './PrivateRoute';
 
 
 export  const  router = createBrowserRouter([
@@ -30,15 +30,15 @@ export  const  router = createBrowserRouter([
             },{
                 path:"/courses",
                 element:<Courses></Courses>,
-                loader:()=>fetch('https://learn-web-assignment-server.vercel.app/courses')
+                loader:()=>fetch('https://assignment-ten-server-six.vercel.app/courses')
             },{
                 path:"/courses/:id",
                 element:<FullCourseDetails></FullCourseDetails>,
-                loader:({params})=>fetch(`https://learn-web-assignment-server.vercel.app/courses/${params.id}`)
+                loader:({params})=>fetch(`https://assignment-ten-server-six.vercel.app/courses/${params.id}`)
             },{
                 path:"/checkout/:id",
                 element:<PrivateRoutes><CheckOut></CheckOut></PrivateRoutes>,
-                loader:({params})=>fetch(`https://learn-web-assignment-server.vercel.app/courses/${params.id}`)
+                loader:({params})=>fetch(`https://assignment-ten-server-six.vercel.app/courses/${params.id}`)
             },{
                 path:"/blog",
                 element:<Blog></Blog>
@@ -52,7 +52,7 @@ export  const  router = createBrowserRouter([
             
             {
                 path:"*",
-                element:<NotFound></NotFound>
+                element:<Error></Error>
 
             }
         ]

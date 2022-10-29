@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {FaCode} from "react-icons/fa"
 import { useContext } from 'react';
-import { DarkModeContext } from '../../context/DarkContext';
-import { AuthContext } from '../../context/UserContext';
+import { DarkModeContext } from '../Context/DarkContext';
+import { AuthContext } from '../Context/UserContext';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 

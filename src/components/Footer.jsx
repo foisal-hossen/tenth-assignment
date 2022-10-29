@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
-import { DarkModeContext } from '../../context/DarkContext';
+import { DarkModeContext } from '../Context/DarkContext';
 
 
 const Footer = () => {
@@ -35,8 +35,10 @@ const Footer = () => {
       <label className="label">
         <span className="label-text">Enter your email address</span>
       </label> 
-      <div className="relative">
-        <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16" /> 
+              <div className="relative">
+                
+                <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16" /> 
+                
         <button className="btn btn-info absolute top-0 right-0 rounded-l-none">Subscribe</button>
       </div>
     </div>
