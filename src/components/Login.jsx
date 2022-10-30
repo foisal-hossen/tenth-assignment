@@ -49,8 +49,8 @@ const Login = () => {
 
      }
     return (
-       <div>
-        <h1 className='text-3xl  text-center my-5'>Login Here To</h1>
+       <div className='bg-gray-300 pb-10'>
+        <h1 className='text-3xl  text-center pt-10'>Login Here To</h1>
          <h1 className='bg-warning text-2xl w-1/2 mx-auto rounded-xl text-white '>{error}</h1>
          <form onSubmit={handleSubmit} className='flex flex-col items-center justify-between   py-10 space-y-4 bg-slate-200 text-slate-900 mx-auto rounded w-1/2 my-2'>
                  
@@ -60,9 +60,9 @@ const Login = () => {
                  <button className='btn btn-info' type='submit'>Login</button>
         </form>
           <br/>
-            <h1 className='text-3xl text-center'>OR</h1>
+            <h1 className='text-3xl text-center '>OR</h1>
             <h1 className='text-2xl text-slate-900 text-center'>Login With</h1>
-          <div className='flex text-slate-800 text-2xl justify-between w-32 my-10 mx-auto bg-slate-200 p-5 rounded-lg'>
+          <div className='flex text-slate-800 text-2xl justify-between w-32  mx-auto bg-slate-200 p-5  rounded-lg'>
           <FaGoogle onClick={handleGoogle}  className='hover:bg-white cursor-pointer '></FaGoogle>
           <FaGithub onClick={handleGithub} className='hover:bg-white cursor-pointer '></FaGithub>
           </div>
