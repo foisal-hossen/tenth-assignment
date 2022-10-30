@@ -6,6 +6,7 @@ import { DarkModeContext } from '../Context/DarkContext';
 import { AuthContext } from '../Context/UserContext';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+import logo from "../Images/icons-26-300x300.png"
 
 
 
@@ -50,7 +51,12 @@ const Header = () => {
       </ul>
 </div>
           
-    <Link to="/" className="btn btn-ghost normal-case text-xl "><p className='mr-2'>MASTER PROGRAMMING</p><FaCode className='text-3xl'/></Link>
+            <Link to="/" className="btn btn-ghost normal-case text-xl ml-5 ">
+          <img className='h-12' src={logo} alt="" />
+              <p className='mr-2 '>
+                LEARNING -HUB
+              </p>
+              <FaCode className='text-3xl' /></Link>
   </div>
   
 

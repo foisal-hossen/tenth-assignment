@@ -2,8 +2,9 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2'>
-             <div className="card w-96 bg-base-100 shadow-xl">
+       <div className='ml-10 grid grid-cols-1 md:grid-cols-3'>
+          
+             <div className="card w-96 bg-base-100  shadow-xl mt-10">
                <figure className="px-10 pt-10">
                   <img src="https://global-uploads.webflow.com/62b397ed0ff18cefd722ad0c/62e81ca0304e5174b6fa0d78_coding_for_business.jpg" alt="Shoes" className="rounded-xl" />
                </figure>
@@ -15,7 +16,8 @@ const Blog = () => {
             </div>
            </div>
           </div>
-             <div className="card w-96 bg-base-100 shadow-xl">
+
+             <div className="card w-96 bg-base-100 shadow-xl mt-10">
                <figure className="px-10 pt-10">
                   <img src="https://global-uploads.webflow.com/62b397ed0ff18cefd722ad0c/62e81ca0304e5174b6fa0d78_coding_for_business.jpg" alt="Shoes" className="rounded-xl" />
                </figure>
@@ -27,11 +29,12 @@ const Blog = () => {
             </div>
            </div>
           </div>
-             <div className="card w-96 bg-base-100 shadow-xl">
+
+             <div className="card w-96 bg-base-100 shadow-xl mt-10  first-line:">
                <figure className="px-10 pt-10">
                   <img src="https://global-uploads.webflow.com/62b397ed0ff18cefd722ad0c/62e81ca0304e5174b6fa0d78_coding_for_business.jpg" alt="Shoes" className="rounded-xl" />
                </figure>
-            <div className="card-body items-center text-center">
+            <div className="card-body items-center text-center mb-10">
                <h2 className="card-title">How does the Private Routes Word</h2>
                <p>Fisrt of all we puth that route for example "checkout" route inside of a component when this "checkout" route is requested the component it is inside of will check some condition if it is the authentic user or not if it is then it will allow the user to "checkout" otherwise it will navigate us to login page</p>
              <div className="card-actions">
@@ -39,7 +42,8 @@ const Blog = () => {
             </div>
            </div>
           </div>
-             <div className="card w-96 bg-base-100 shadow-xl">
+
+             <div className="card w-96 bg-base-100 shadow-xl mt-10 mb-10">
                <figure className="px-10 pt-10">
                   <img src="https://global-uploads.webflow.com/62b397ed0ff18cefd722ad0c/62e81ca0304e5174b6fa0d78_coding_for_business.jpg" alt="Shoes" className="rounded-xl" />
                </figure>

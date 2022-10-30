@@ -5,9 +5,9 @@ const ErrorHandle = () => {
     return (
         <div>
               <main className="h-screen w-full flex flex-col justify-center items-center bg-[#1A2238]">
-	<h1 className="text-9xl font-extrabold text-white tracking-widest">404</h1>
-	<div className="bg-[#FF6A3D] px-2 text-sm rounded rotate-12 absolute">
-		Page Not Found
+	<h1 className="text-9xl font-extrabold text-white tracking-widest">4<span className='text-red-500'>0</span>4</h1>
+	<div className="bg-[#FF6A3D] px-2 py-2 font-semibold text-md rounded rotate-12 absolute text-white">
+		Sorry Bro page Ta pailam na
 	</div>
 	<button className="mt-5">
       <Link
@@ -18,7 +18,7 @@ const ErrorHandle = () => {
         ></span>
 
         <span className="relative block px-8 py-3 bg-[#1A2238] border border-current">
-          <Link to="/">Go Home</Link>
+          <Link to="/">Bari Jao</Link>
         </span>
       </Link>
     </button>

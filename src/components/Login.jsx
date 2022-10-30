@@ -54,8 +54,10 @@ const Login = () => {
          <h1 className='bg-warning text-2xl w-1/2 mx-auto rounded-xl text-white '>{error}</h1>
          <form onSubmit={handleSubmit} className='flex flex-col items-center justify-between   py-10 space-y-4 bg-slate-200 text-slate-900 mx-auto rounded w-1/2 my-2'>
                  
-                 <span>EMAIL:</span><input name='email' type="email" placeholder="Enter Email" className="input  input-bordered input-info w-full max-w-xs text-white" />
-                 <span>PASSWORD:</span><input name='password' type="password" placeholder="Enter Password" className="input  input-bordered input-info w-full max-w-xs text-white" />
+          <span>EMAIL:</span>
+          <input name='email' type="email" placeholder="Enter Email" className="bg-gray-900  input  input-bordered input-info w-full max-w-xs text-white" />
+          <span>PASSWORD:</span>
+          <input name='password' type="password" placeholder="Enter Password" className="input bg-gray-900 input-bordered input-info w-full max-w-xs text-white" />
                  <p>Do not Have An Account ? <Link className='text-yellow-500' to="/register">Register</Link></p>
                  <button className='btn btn-info' type='submit'>Login</button>
         </form>
