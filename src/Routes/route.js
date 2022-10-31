@@ -30,15 +30,15 @@ export  const  router = createBrowserRouter([
             },{
                 path:"/courses",
                 element:<Courses></Courses>,
-                loader:()=>fetch('https://assignment-ten-server-six.vercel.app/courses')
+                loader:()=>fetch('https://assignment-ten-server-foisal-hossen.vercel.app/courses')
             },{
                 path:"/courses/:id",
                 element:<FullCourseDetails></FullCourseDetails>,
-                loader:({params})=>fetch(`https://assignment-ten-server-six.vercel.app/courses/${params.id}`)
+                loader:({params})=>fetch(`https://assignment-ten-server-foisal-hossen.vercel.app/courses/${params?.id}`)
             },{
                 path:"/checkout/:id",
                 element:<PrivateRoutes><CheckOut></CheckOut></PrivateRoutes>,
-                loader:({params})=>fetch(`https://assignment-ten-server-six.vercel.app/courses/${params.id}`)
+                loader:({params})=>fetch(`https://assignment-ten-server-foisal-hossen.vercel.app/courses/${params?.id}`)
             },{
                 path:"/blog",
                 element:<Blog></Blog>

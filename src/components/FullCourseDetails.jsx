@@ -15,15 +15,18 @@ const FullCourseDetails = () => {
         doc.text(20,85,"Topics That will cover")
         
 
-        course.course_topics.map(topic=>{
+        course.course_topics.map(topic => {
+        
              y_index+=20
             return doc.text(20,y_index,`${topic}`)
         })
 
+
         doc.save("module.pdf")
     }
     
-    const course=useLoaderData();
+    const course = useLoaderData();
+    console.log(course)
     return (
         <div className='w-3/4 mx-auto'>
              <img src={course.course_image} alt="" className='w-full rounded-md'/>

@@ -5,7 +5,8 @@ import Course from './Course';
 
 const Courses = () => {
      const [course,setCourse]=useState({})
-    const courses=useLoaderData();
+    const courses = useLoaderData();
+    console.log(courses)
     const  handleShowDetails=(id)=>{
       const course=courses.find(cour=>id===cour.id);
       setCourse(course);
@@ -14,7 +15,7 @@ const Courses = () => {
         <div className='mx-5 flex justify-between '>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 my-10'>
                 {
-                    courses.map(course=><Course key={course.id} handleShowDetails={handleShowDetails} course={course}></Course>)
+                    courses.map(course=><Course key={course?.id} handleShowDetails={handleShowDetails} course={course}></Course>)
                 }  
             </div>
 
