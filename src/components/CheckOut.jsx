@@ -6,10 +6,11 @@ import { LineChart, Line, XAxis, YAxis, Tooltip,} from 'reacharts';
 
 
 const CheckOut = () => {
-    const course=useLoaderData();
+    const course = useLoaderData();
+    console.log(course);
     return (
         <div className="bg-white my-10 flex">
-           <LineChart width={500} height={500} data={course.data} margin={{
+           <LineChart width={500} height={500} data={course?.data} margin={{
             top: 20,
             right: 30,
             left: 20,
@@ -21,7 +22,7 @@ const CheckOut = () => {
                  <Tooltip/>
            </LineChart>
            <div>
-              <h1 className="text-2xl text-slate-800 bg-yellow-400 rounded p-1 my-5">This Chart Shows How many People Bought  {course.course_name} This Year</h1>
+              <h1 className="text-2xl text-slate-800 bg-yellow-400 rounded p-1 my-5">This Chart Shows How many People Bought  {course?.course_name} This Year</h1>
                 <button onClick={()=>{
                     toast.success("Purchased SuccessFully")
                 }} className="btn btn-info">Click To Purchase</button>

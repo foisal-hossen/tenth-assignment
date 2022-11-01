@@ -28,24 +28,24 @@ const FullCourseDetails = () => {
     const course = useLoaderData();
     console.log(course)
     return (
-        <div className='w-3/4 mx-auto'>
-             <img src={course.course_image} alt="" className='w-full rounded-md'/>
-             <p className='text-slate-900 font-bold text-3xl my-2'>Name:{course.course_name}</p>
-              <Link to={`/checkout/${course.id}`}><button className="btn btn-success normal-case text-xl">Get Premium Access</button></Link>
-              <button onClick={generatePdf} className="btn mx-3 btn-success normal-case text-xl">Download Course Module</button>
+        <div className=' px-56 bg-gray-900'>
+             <img src={course.course_image} alt="" className='pl-60 pt-10 mb-5 h-72 rounded-xl'/>
+             <p className='text-white font-bold text-3xl my-2 mb-5'>Name: {course.course_name}</p>
+              <Link to={`/checkout/${course.id}`}><button className="btn btn-success normal-case text-xl hover:bg-yellow-600 hover:text-white">Get Premium Access</button></Link>
+              <button onClick={generatePdf} className="btn mx-3 btn-success normal-case text-xl hover:bg-blue-600 hover:text-white">Download Course Module</button>
            
               <ul className=''>
-                 <h1 className='text-slate-900  font-bold text-3xl text-center mt-5'>Topics That Will Be Covered</h1>
+                 <h1 className='text-white  font-bold text-3xl text-center mt-5'>Topics That Will Be Covered</h1>
                   {
                   course.course_topics.map(topic=>{
-                    return <li>{topic}</li>
+                    return <li className='font-bold text-lg text-green-900 marker:'>{topic}</li>
                   })
                   }
               </ul>
-               <p className='font-bold text-3xl text-center'>Course Description:</p>
-               <p className='text-slate-900 font-bold '>{course.course_description}</p>
-               <p className='text-slate-900 text-2xl'>Instructor:{course.instructor_name}</p>
-               <img src={course.instructor_image} className="rounded-2xl" alt=""/>
+               <p className='font-bold text-3xl text-center mt-10 text-blue-900'>Course Description:</p>
+               <p className='text-white font-bold '>{course.course_description}</p>
+               <p className='text-white text-2xl'>Instructor:{course.instructor_name}</p>
+               <img src={course.instructor_image} className="rounded-2xl pb-10 pl-96 mt-10" alt=""/>
 
 
         </div>

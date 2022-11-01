@@ -13,18 +13,26 @@ const PrivateRoutes = ({children}) => {
       const location =useLocation();
       const {loading}=useContext(AuthContext);
 
-      if(loading){
-        return   <progress className="progress w-56 my-24"></progress>               
-      }
+    //   if(loading){
+    //     return   <progress className="progress progress-seccess w-56 my-24"></progress>               
+    //   }
 
-      if(!user){
-        return <Navigate to="/login" state={{from: location}} replace></Navigate>
-    }
+    //   if(!user){
+    //     return <Navigate to="/login" state={{from: location}} replace></Navigate>
+    // }
 
       
 
-    return children;
-      
+    // return children;
+    
+    if(loading) return (
+      <div className='flex justify-center min-h-screen items-center'>
+          <progress className="progress progress-seccess w-56 my-24"></progress>
+      </div>
+  ) 
+  if (user && user.uid) return children;
+  return <Navigate to='/login' state={{ from: location }} replace/>
 };
+      
 
 export default PrivateRoutes;
