@@ -1,5 +1,6 @@
 # :book: Learning -Hub
 ### Live link: https://zingy-moxie-70dd20.netlify.app
+### firebase hosting:  https://assignment-ten-4671a.web.app
 ### server side : https://github.com/programming-hero-web-course1/b610-lerning-platform-server-side-foisal-hossen.git
 ### vercel link : https://assignment-ten-server-six.vercel.app/courses
 
